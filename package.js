@@ -1,8 +1,8 @@
 Package.describe({
   summary: "Wechat account login for meteor",
   "version": "0.2.6",
-  "git": "https://github.com/leonzhang1109/meteor-accounts-wechat",
-  "name": "leonzhang1109:accounts-wechat"
+  "git": "https://github.com/95zz/meteor-accounts-wechat",
+  "name": "jxtpro:accounts-wechat"
 });
 
 Package.on_use(function(api) {
@@ -16,7 +16,7 @@ Package.on_use(function(api) {
   api.use('oauth2', ['client', 'server']);
   api.use('http', ['server']);
   api.use('templating', 'client');
-  api.use('underscore', 'server');
+  api.use('underscore', ['client', 'server']);
   api.use('random', 'client');
   api.use('service-configuration', ['client', 'server']);
 
